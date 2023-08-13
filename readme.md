@@ -4,4 +4,6 @@ iOS 加载大图时，解码时会导致内存爆增，
 方案：
 将图片分割成多个块，每块使用 CALayer 进行渲染。
 
-![../memory.png](内存消耗)
+![Demo](./demo.gif)
+
+![内存增长](./memory.png)
