@@ -17,6 +17,9 @@
 		40A68F8A2A88B33100445C9F /* LargeImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A68F892A88B33100445C9F /* LargeImageViewTests.m */; };
 		40A68F942A88B33100445C9F /* LargeImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A68F932A88B33100445C9F /* LargeImageViewUITests.m */; };
 		40A68F962A88B33100445C9F /* LargeImageViewUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A68F952A88B33100445C9F /* LargeImageViewUITestsLaunchTests.m */; };
+		40A68FA32A88B35F00445C9F /* pic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40A68FA22A88B35F00445C9F /* pic.bundle */; };
+		40A68FA92A88B54A00445C9F /* PreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A68FA82A88B54A00445C9F /* PreviewController.m */; };
+		40A68FB22A88EAF200445C9F /* LargeImageLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A68FB12A88EAF200445C9F /* LargeImageLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,11 @@
 		40A68F8F2A88B33100445C9F /* LargeImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LargeImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A68F932A88B33100445C9F /* LargeImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeImageViewUITests.m; sourceTree = "<group>"; };
 		40A68F952A88B33100445C9F /* LargeImageViewUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeImageViewUITestsLaunchTests.m; sourceTree = "<group>"; };
+		40A68FA22A88B35F00445C9F /* pic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pic.bundle; sourceTree = "<group>"; };
+		40A68FA72A88B54A00445C9F /* PreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewController.h; sourceTree = "<group>"; };
+		40A68FA82A88B54A00445C9F /* PreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewController.m; sourceTree = "<group>"; };
+		40A68FB02A88EAF200445C9F /* LargeImageLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargeImageLayer.h; sourceTree = "<group>"; };
+		40A68FB12A88EAF200445C9F /* LargeImageLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeImageLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +112,21 @@
 		40A68F6C2A88B32B00445C9F /* LargeImageView */ = {
 			isa = PBXGroup;
 			children = (
+				40A68FB32A88FA7100445C9F /* LargeImageLayer */,
 				40A68F6D2A88B32B00445C9F /* AppDelegate.h */,
 				40A68F6E2A88B32B00445C9F /* AppDelegate.m */,
 				40A68F702A88B32B00445C9F /* SceneDelegate.h */,
 				40A68F712A88B32B00445C9F /* SceneDelegate.m */,
 				40A68F732A88B32B00445C9F /* ViewController.h */,
 				40A68F742A88B32B00445C9F /* ViewController.m */,
+				40A68FA72A88B54A00445C9F /* PreviewController.h */,
+				40A68FA82A88B54A00445C9F /* PreviewController.m */,
 				40A68F762A88B32B00445C9F /* Main.storyboard */,
 				40A68F792A88B33000445C9F /* Assets.xcassets */,
 				40A68F7B2A88B33000445C9F /* LaunchScreen.storyboard */,
 				40A68F7E2A88B33000445C9F /* Info.plist */,
 				40A68F7F2A88B33000445C9F /* main.m */,
+				40A68FA22A88B35F00445C9F /* pic.bundle */,
 			);
 			path = LargeImageView;
 			sourceTree = "<group>";
@@ -134,6 +146,15 @@
 				40A68F952A88B33100445C9F /* LargeImageViewUITestsLaunchTests.m */,
 			);
 			path = LargeImageViewUITests;
+			sourceTree = "<group>";
+		};
+		40A68FB32A88FA7100445C9F /* LargeImageLayer */ = {
+			isa = PBXGroup;
+			children = (
+				40A68FB02A88EAF200445C9F /* LargeImageLayer.h */,
+				40A68FB12A88EAF200445C9F /* LargeImageLayer.m */,
+			);
+			path = LargeImageLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +262,7 @@
 			files = (
 				40A68F7D2A88B33000445C9F /* LaunchScreen.storyboard in Resources */,
 				40A68F7A2A88B33000445C9F /* Assets.xcassets in Resources */,
+				40A68FA32A88B35F00445C9F /* pic.bundle in Resources */,
 				40A68F782A88B32B00445C9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A68FA92A88B54A00445C9F /* PreviewController.m in Sources */,
 				40A68F752A88B32B00445C9F /* ViewController.m in Sources */,
 				40A68F6F2A88B32B00445C9F /* AppDelegate.m in Sources */,
+				40A68FB22A88EAF200445C9F /* LargeImageLayer.m in Sources */,
 				40A68F802A88B33000445C9F /* main.m in Sources */,
 				40A68F722A88B32B00445C9F /* SceneDelegate.m in Sources */,
 			);
@@ -456,6 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +508,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
