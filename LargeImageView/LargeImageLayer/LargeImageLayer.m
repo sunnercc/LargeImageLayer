@@ -7,7 +7,7 @@
 
 #import "LargeImageLayer.h"
 
-// 限制内存波动 500 * 500 * 8 = 1M
+// 限制内存波动 500 * 500 * 4 = 1M
 static size_t block_size = 500;
 
 @implementation LargeImageLayer
